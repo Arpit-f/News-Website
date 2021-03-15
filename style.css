@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.navBar {
+  padding: 1rem;
+  background-color: white;
+}
+
+.navBar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navBar ul li {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.navBar ul li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navBar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navBar .rightnav {
+  width: 20%;
+}
+
+.navBar .leftnav {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.navBar .leftnav span {
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+
+.navBar .leftnav:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section {
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+section .mainHero {
+  margin-top: .5rem;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+section .expand-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  background: #333333;
+  color: #ffffff;
+  text-align: left;
+}
+
+section .expand-btn::after {
+  content: '\25be';
+  float: right;
+}
+
+section .maincontent {
+  overflow: auto;
+  max-height: 70px;
+  background: #eeeeee;
+  padding: 10px 15px;
+}
+
+section .expand-btn-active {
+  background: #555555;
+}
+
+section .expand-btn-active::after {
+  content: '\25b4';
+}
+
+@media screen and (max-width: 750px) {
+  .rightnav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
